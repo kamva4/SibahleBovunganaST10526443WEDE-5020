@@ -1,123 +1,212 @@
-*+<!DOCTYPE html>
+*+
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-        content="width=device-width,initial-scale=1,0">
-        <title>Menu | Coffee&Beans</title>
 
-    </head>
-    <body>
-        <header>
-            <div class="logo">Coffee&Beans</div>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about_us.html">About Us</a>
-                <a href="menu.html">Menu</a>
-                <a href="enquiry.html">Enquiry</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </header>
-        <main>
-            <section class="menu-intro">
-                <h1>Our Menu</h1>
-                <p>Quality coffee, fresh pastries and light meals made for busy johannesburg days</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,0">
+    <title>Menu | Coffee&Beans</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">Coffee&Beans</div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class="fa fa-home"></i>
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="menu.html">
+                        <i class="fa fa-coffee"></i>
+                        Menu
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about_us.html">
+                        <i class="fa fa-info-circle"></i>
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="enquiry.html">
+                        <i class="fa fa-pencil-square-o"></i>
+                        Enquiry
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        <i class="fa fa-phone"></i>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="menu-intro">
+            <h1>Our Menu</h1>
+            <p>Quality coffee, fresh pastries and light meals made for busy johannesburg days</p>
+        </section>
+        <div class="search-pill">
+            <label for="product-search" class="visually-hidden">Search products</label>
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="search" id="product-search" name="q" placeholder="Search">
+        </div>
+        <section class="coffee-intro">
+            <h2>coffee</h2>
+            <div class="menu-grid">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/images/espresso.jpg">
+                        <a href="enquiry.html" class="add-cart">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            Add to cart
+                        </a>
+                    </div>
+                    <div class="product-card-body">
+                        <h3>Espresso</h3>
+                        <p>A rich and concentrated shot of locally
+                            sourced coffee.</p>
+                        <p>R25</p>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/images/iced americano.jpg" alt="Iced Americano">
+                        <a href="enquiry.html" class="add-cart">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            Add to cart
+                        </a>
+                    </div>
+                    <div class="product-card-body">
+                        <h3>Iced Americano</h3>
+                        <img src="images/images/iced americano.jpg" alt="Iced Americano">
+                        <p>Iced Americano balanced with
+                            cold
+                            ice for a smooth,bold cup</p>
+                        <p>R30</p>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/images/cappuccino.jpg" alt="Cappuccino">
+                        <a href="enquiry.html" class="add-cart">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            Add to cart
+                        </a>
+                    </div>
+                    <div class="product-card-body">
+                        <h3>Cappuccino</h3>
+                        <p>Rich espresso topped with smooth
+                            steamed
+                            milk.</p>
+                        <P>R35</P>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/images/Iced Caramel Latte Recipe _ Creamy & Refreshing Coffee Drink.jpg"
+                            alt="Caramel latte">
+                        <a href="enquiry.html" class="add-cart">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            Add to cart
+                        </a>
+                    </div>
+                    <div class="product-card-body">
+                        <h3>Caramel Latte</h3>
+                        <img src="images/images/Iced Caramel Latte Recipe _ Creamy & Refreshing Coffee Drink.jpg"
+                            alt="Caramel Latte">
+                        <P>Smooth espresso with steamed and caramel.</P>
+                        <p>R40</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="sa-favourites">
+            <h2>South African Favourites</h2>
+            <p>A taste of home, served the Coffee&Beans way.</p>
+            <article>
+                <h3>Rooibos Iced Tea</h3>
+                <img src="images/images/Rooibos Peach Tea Punch.jpg" alt="Rooibos Iced Tea">
+                <p>Refreshing iced rooibos
+                    tea made with proudly south african rooibos.</p>
+                <p>R30</p>
+            </article>
+            <section class="tea-offers">
+                <h2>Spend R50,Get a Little Extra!</h2>
+                <P>Spend R50 or more in-store and recieve a complimentary tea bag sachet.</P>
+                <p>Ask our team about today's available flavours.</p>
             </section>
-            <section class="cofee-intro">
-                <h2>coffee</h2>
-                <article>
-                    <h3>Espresso</h3>
-                    <p>A rich and concentrated shot of locally sourced coffee.</p>
-                    <p>R25</p>
-                </article>
-                <article>
-                    <h3>Americano</h3>
-                    <p>Espresso balanced with hot water for a smooth,bold cup</p>
-                    <p>R30</p>
-                </article>
-                <article>
-                    <h3>Cappuccino</h3>
-                    <p>Rich espresso topped with smooth steamed milk.</p>
-                    <P>R35</P>
-                </article>
-                <article>
-                    <h3>Caramel Latte</h3>
-                    <P>Smooth espresso with steamed and caramel.</P>
-                    <p>R40</p>
-                </article>
-            </section>
-            <section class="sa-favourites">
-                <h2>South African Favourites</h2>
-                <p>A taste of home, served the Coffee&Beans way.</p>
-                <article>
-                    <h3>Rooibos Iced Tea</h3>
-                    <p>Refreshing iced rooibos tea made with proudly south african rooibos.</p>
-                    <p>R30</p>
-                </article>
-                <section class="tea-offers">        
-                    <h2>Spend R50,Get a Little Extra!</h2>            
-                    <P>Spend R50 or more in-store and recieve a complimentary tea bag sachet.</P>
-                    <p>Ask our team about today's available flavours.</p>
-                </section>
-                <article>
-                    <h3>Magwinya (fat kooks/cakes)</h3>
-                    <p>Soft, golden south african fried dough, perfect for quick breakfast.</p>
-                    <p>R20 for 5</p>
-                </article>
-                <article>
-                    <h3>Cone Chips</h3>
-                    <p>Crispy golden chips served as a quick and satisfying snack.</p>
-                    <P>R25</P>
-                </article>
-            </section>
-            <section class="pastry-menu">
-                <h2>Pastries</h2>
-                <article>
-                    <h3>Butter croissant</h3>
-                    <p>A light, flaky pastry perfect with your morining coffee.</p>
-                    <p>R40</p>
-                </article>
-                <article>
-                    <h3>Blueberry Muffin</h3>
-                    <p>A soft muffin filled with blueberries.</p>
-                    <p>R30</p>
-                </article>
-            </section>
-            <section class="quick-bites">
-                <h2>Quick Bites</h2>
-                <p>Something quick before class,work or your next meeting.</p>
-                <article>
-                    <h3>Magwinya(fat kooks/cakes)</h3>
-                    <p>Soft,golden and freshly prepared for quick south african breakfast.</p>
-                    <p>R20 for 5</p>
-                </article>
-                <article>
-                    <h3>Cone Chips</h3>
-                    <P>Crispy golden chips in a cone shaped cardboard made for a quick snack.</P>
-                    <p>R25</p>
-                </article>
-            </section>
-            <section class="light-meals">
-                <h2>Light Meals</h2>
-                <article>
-                    <h3>chicken Sandwich</h3>
-                    <p>Grilled chicken with fresh salad and our dressing.</p>
-                    <p>R35</p>
-                </article>
-                <article>
-                    <h3>Avocado Toast</h3>
-                    <p>Creamy avacado served on freshly toasted bread.</p>
-                    <p>R48</p>
-                </article>
-            </section>
-            <section class="Pre-order">
-                <h2>In a Hurry?</h2>
-                <P>Order ahead and collect your coffee when you arrive.</P>
-                <a href="enquiry.html">Pre-Order Enquiry</a>
-            </section>
-        </main>
-        <footer>
-            <p>&COPY; 2026 Coffee&Beans, All rights reserved./p>
-        </footer>
-    </body>
+            <article>
+                <h3>Magwinya (fat kooks/cakes)</h3>
+                <img src="images/images/magwinya pic.jpg" alt="Magwinya">
+                <p>Soft, golden south african fried dough,
+                    perfect for quick breakfast.</p>
+                <p>R20 for 5</p>
+            </article>
+            <article>
+                <h3>Cone Chips</h3>
+                <img src="images/images/Best Fries.jpg" alt="Cone Chips">
+                <p>Crispy golden chips served as a quick and
+                    satisfying snack.</p>
+                <P>R25</P>
+            </article>
+        </section>
+        <section class="pastry-menu">
+            <h2>Pastries</h2>
+            <article>
+                <h3>Butter croissant</h3>
+                <img src="images/images/butter corissant.jpg" alt="Butter croissant">
+                <p>A light, flaky pastry perfect
+                    with your morining coffee.</p>
+                <p>R40</p>
+            </article>
+            <article>
+                <h3>Blueberry Muffin</h3>
+                <img src="images/images/Moist Bakery Style Blueberry Muffins.jpg" alt="Blueberry Muffin">
+                <p>A soft
+                    muffin filled with blueberries.</p>
+                <p>R30</p>
+            </article>
+        </section>
+
+        <section class="light-meals">
+            <h2>Light Meals</h2>
+            <article>
+                <h3>chicken Sandwich</h3>
+                <img src="images/images/Chicken Sandwich.jpg" alt="Chicken Sandwich" <p>Grilled chicken with fresh salad
+                and our dressing.</p>
+                <p>R35</p>
+            </article>
+            <article>
+                <h3>Avocado Toast</h3>
+                <img src="images/images/avocado sandwich.jpg" alt="Avocado Toast">
+                <p>Creamy avacado served on freshly
+                    toasted bread.</p>
+                <p>R48</p>
+            </article>
+        </section>
+        <section class="Pre-order">
+            <h2>In a Hurry?</h2>
+            <P>Order ahead and collect your coffee when you arrive.</P>
+            <a href="enquiry.html">Pre-Order Enquiry</a>
+        </section>
+    </main>
+    <footer>
+        <p>&COPY; 2026 Coffee&Beans, All rights reserved./p>
+    </footer>
+</body>
+
 </html>
