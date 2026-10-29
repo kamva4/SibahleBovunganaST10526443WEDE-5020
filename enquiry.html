@@ -1,1 +1,428 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Enquiries | Coffee&Beans</title>
+
+    <meta name="description" content="Contact Coffee&Beans with questions about our menu, café locations, group visits and special requests.">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="site-header">
+
+        <a href="index.html" class="logo">
+            Coffee<span>&</span>Beans
+        </a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about_us.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="enquiry.html" class="current" aria-current="page">Enquiry</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- ENQUIRY BANNER -->
+        <section class="inner-banner enquiry-banner">
+
+            <div class="inner-banner-content">
+
+                <p class="eyebrow">HOW CAN WE HELP?</p>
+
+                <h1>Make an Enquiry</h1>
+
+                <p>
+                    Tell us what you need, and let us help you
+                    make your Coffee&Beans experience special.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ENQUIRY INTRODUCTION -->
+        <section class="page-container">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">WE ARE HERE FOR YOU</p>
+
+                <h2>We Would Love to Hear From You</h2>
+
+                <p>
+                    Whether you have a question about our menu,
+                    want to arrange a group visit or have a special
+                    request, send us an enquiry below.
+                </p>
+
+            </div>
+
+
+            <!-- ENQUIRY INFORMATION CARDS -->
+            <div class="purpose-grid">
+
+                <article class="purpose-card">
+
+                    <div class="purpose-icon" aria-hidden="true">
+                        &#9749;
+                    </div>
+
+                    <h3>Menu Enquiries</h3>
+
+                    <p>
+                        Ask us about our coffee, refreshments,
+                        meals and available specials.
+                    </p>
+
+                </article>
+
+
+                <article class="purpose-card">
+
+                    <div class="purpose-icon" aria-hidden="true">
+                        &#9825;
+                    </div>
+
+                    <h3>Group Visits</h3>
+
+                    <p>
+                        Contact us about visiting Coffee&Beans
+                        with friends, family or colleagues.
+                    </p>
+
+                </article>
+
+
+                <article class="purpose-card">
+
+                    <div class="purpose-icon" aria-hidden="true">
+                        &#10022;
+                    </div>
+
+                    <h3>Special Requests</h3>
+
+                    <p>
+                        Let us know about your requirements
+                        so we can better understand your needs.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ENQUIRY FORM -->
+        <section class="page-container">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">GET IN TOUCH</p>
+
+                <h2>Send Us Your Enquiry</h2>
+
+                <p>
+                    Complete the form below. Fields marked with
+                    an asterisk (*) are required.
+                </p>
+
+            </div>
+
+
+            <form id="enquiryForm" class="enquiry-form">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="firstName">First Name *</label>
+
+                        <input
+                            type="text"
+                            id="firstName"
+                            name="firstName"
+                            autocomplete="given-name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="lastName">Last Name *</label>
+
+                        <input
+                            type="text"
+                            id="lastName"
+                            name="lastName"
+                            autocomplete="family-name"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">Email Address *</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="enquiryCategory">
+                            Enquiry Category *
+                        </label>
+
+                        <select
+                            id="enquiryCategory"
+                            name="enquiryCategory"
+                            required
+                        >
+
+                            <option value="">Select a category</option>
+                            <option value="Menu Enquiry">Menu Enquiry</option>
+                            <option value="Group Visit">Group Visit</option>
+                            <option value="Special Request">Special Request</option>
+                            <option value="General Enquiry">General Enquiry</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="cafeLocation">
+                            Preferred Café Location *
+                        </label>
+
+                        <select
+                            id="cafeLocation"
+                            name="cafeLocation"
+                            required
+                        >
+
+                            <option value="">Select a location</option>
+                            <option value="Braamfontein">Braamfontein</option>
+                            <option value="Melville">Melville</option>
+                            <option value="Either location">Either location</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="preferredDate">
+                        Preferred Date (Optional)
+                    </label>
+
+                    <input
+                        type="date"
+                        id="preferredDate"
+                        name="preferredDate"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">Your Message *</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        minlength="10"
+                        placeholder="Please tell us how we can help..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <p
+                    id="formResponse"
+                    role="status"
+                    aria-live="polite"
+                    hidden
+                ></p>
+
+
+                <button type="submit" class="btn">
+                    Submit Enquiry
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- CALL TO ACTION -->
+        <section class="about-cta">
+
+            <p class="eyebrow">YOUR COFFEE MOMENT AWAITS</p>
+
+            <h2>Discover Coffee&Beans</h2>
+
+            <p>
+                Explore our menu and discover your next
+                favourite coffee or treat.
+            </p>
+
+            <a href="menu.html" class="btn">
+                Explore Our Menu
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <p>&copy; <span id="currentYear">2026</span> Coffee&Beans. All rights reserved.</p>
+
+        <nav aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+
+    <script>
+        // Enquiry form validation
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const form = document.getElementById("enquiryForm");
+            const response = document.getElementById("formResponse");
+
+            if (form && response) {
+
+                form.addEventListener("submit", function (event) {
+
+                    event.preventDefault();
+
+                    const firstName =
+                        document.getElementById("firstName").value.trim();
+
+                    const lastName =
+                        document.getElementById("lastName").value.trim();
+
+                    const email =
+                        document.getElementById("email").value.trim();
+
+                    const category =
+                        document.getElementById("enquiryCategory").value;
+
+                    const location =
+                        document.getElementById("cafeLocation").value;
+
+                    const message =
+                        document.getElementById("message").value.trim();
+
+                    const emailPattern =
+                        /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                    if (
+                        !firstName ||
+                        !lastName ||
+                        !email ||
+                        !category ||
+                        !location ||
+                        !message
+                    ) {
+
+                        response.textContent =
+                            "Please complete all required fields.";
+
+                        response.hidden = false;
+                        return;
+
+                    }
+
+                    if (!emailPattern.test(email)) {
+
+                        response.textContent =
+                            "Please enter a valid email address.";
+
+                        response.hidden = false;
+                        return;
+
+                    }
+
+                    if (message.length < 10) {
+
+                        response.textContent =
+                            "Please enter a message containing at least 10 characters.";
+
+                        response.hidden = false;
+                        return;
+
+                    }
+
+                    response.textContent =
+                        "Thank you, " + firstName + "! " +
+                        "Your form passed validation. " +
+                        "This demonstration does not send your enquiry to the café.";
+
+                    response.hidden = false;
+
+                    form.reset();
+
+                });
+
+            }
+
+            const year = document.getElementById("currentYear");
+
+            if (year) {
+                year.textContent = new Date().getFullYear();
+            }
+
+        });
+    </script>
+
+</body>
+
+</html>
