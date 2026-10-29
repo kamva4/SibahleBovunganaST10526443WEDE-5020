@@ -1,7 +1,4 @@
 // JavaScript for the Coffee&Beans website
-// Save this file as: js/script.js
-// Link it to each HTML page just before the closing </body> tag:
-// <script src="js/script.js"></script>
 
 // 1. Update the footer year automatically (if a page has an element with id="year").
 const yearSpan = document.getElementById("year");
