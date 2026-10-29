@@ -1,1 +1,745 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coffee&Beans | Menu</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="site-header">
+
+        <a class="logo" href="index.html">
+            Coffee<span>&</span>Beans
+        </a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a class="current" href="menu.html">Menu</a>
+            <a href="about_us.html">About Us</a>
+            <a href="contact_us.html">Contact</a>
+            <a href="enquiry.html">Enquiry</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- MENU HERO -->
+        <section class="menu-hero">
+
+            <div class="menu-hero-content">
+
+                <p class="eyebrow">FRESHLY BREWED, MADE WITH CARE</p>
+
+                <h1>Our <em>Menu</em></h1>
+
+                <p>
+                    Discover your favourite coffee, freshly baked pastries,
+                    and delicious light meals at Coffee&Beans.
+                </p>
+
+            </div>
+
+        </section>
+        <div class="menu-search">
+    <label for="menuSearch">Search our menu</label>
+
+    <input
+        type="search"
+        id="menuSearch"
+        placeholder="Search coffee, cakes, magwinya..."
+        
+    >
+</div>
+
+
+        <!-- SHOPPING CART SUMMARY -->
+        <section class="cart-summary container" id="cart">
+
+            <div class="cart-summary-content">
+
+                <div>
+                    <p class="eyebrow">YOUR SELECTION</p>
+                    <h2>Your Shopping Cart</h2>
+
+                    <p>
+                        Items selected:
+                        <strong id="cart-count">0</strong>
+                    </p>
+
+                    <p>
+                        Total:
+                        <strong id="cart-total">R0.00</strong>
+                    </p>
+                </div>
+
+                <div class="cart-actions">
+
+                    <button
+                        type="button"
+                        class="btn"
+                        id="view-cart-button">
+                        View Cart
+                    </button>
+
+                    <button
+                        type="button"
+                        class="btn btn-outline"
+                        id="clear-cart-button">
+                        Clear Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div
+                id="cart-message"
+                class="cart-message"
+                role="status"
+                aria-live="polite">
+            </div>
+
+            <div id="cart-details" hidden>
+
+                <h3>Items in Your Cart</h3>
+
+                <div id="cart-items"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COFFEE SECTION -->
+        <section class="menu-section container" id="coffee">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">YOUR DAILY FAVOURITE</p>
+
+                <h2>Coffee & Drinks</h2>
+
+                <p>
+                    From a strong morning espresso to a smooth,
+                    refreshing iced coffee, we have something for you.
+                </p>
+
+            </div>
+
+
+            <div class="menu-grid">
+
+                <!-- ESPRESSO -->
+                <article class="menu-item">
+
+                    <img
+                        src="images/espresso.jpg"
+                        alt="Freshly prepared espresso"
+                        class="gallery-image"
+                        loading="lazy">
+
+                    <div class="menu-item-content">
+
+                        <h3>Espresso</h3>
+
+                        <p>
+                            A rich, bold shot of coffee made from
+                            carefully selected coffee beans.
+                        </p>
+
+                        <div class="menu-item-bottom">
+
+                            <span class="price">R25.00</span>
+
+                            <button
+                                type="button"
+                                class="btn add-to-cart"
+                                data-name="Espresso"
+                                data-price="25">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ICED AMERICANO -->
+                <article class="menu-item">
+
+                    <img
+                        src="images/iced-americano.jpg"
+                        alt="Refreshing iced Americano"
+                        class="gallery-image"
+                        loading="lazy">
+
+                    <div class="menu-item-content">
+
+                        <h3>Iced Americano</h3>
+
+                        <p>
+                            A refreshing combination of espresso,
+                            cold water, and ice.
+                        </p>
+
+                        <div class="menu-item-bottom">
+
+                            <span class="price">R30.00</span>
+
+                            <button
+                                type="button"
+                                class="btn add-to-cart"
+                                data-name="Iced Americano"
+                                data-price="30">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CAPPUCCINO -->
+                <article class="menu-item">
+
+                    <img
+                        src="images/cappuccino.jpg"
+                        alt="Cappuccino topped with milk foam"
+                        class="gallery-image"
+                        loading="lazy">
+
+                    <div class="menu-item-content">
+
+                        <h3>Cappuccino</h3>
+
+                        <p>
+                            Smooth espresso blended with steamed
+                            milk and creamy foam.
+                        </p>
+
+                        <div class="menu-item-bottom">
+
+                            <span class="price">R35.00</span>
+
+                            <button
+                                type="button"
+                                class="btn add-to-cart"
+                                data-name="Cappuccino"
+                                data-price="35">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CARAMEL LATTE -->
+                <article class="menu-item">
+
+                    <img
+                        src="images/caramel-latte.jpg"
+                        alt="Creamy caramel latte"
+                        class="gallery-image"
+                        loading="lazy">
+
+                    <div class="menu-item-content">
+
+                        <h3>Caramel Latte</h3>
+
+                        <p>
+                            Creamy milk coffee with espresso
+                            and delicious caramel flavour.
+                        </p>
+
+                        <div class="menu-item-bottom">
+
+                            <span class="price">R40.00</span>
+
+                            <button
+                                type="button"
+                                class="btn add-to-cart"
+                                data-name="Caramel Latte"
+                                data-price="40">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- PASTRIES AND LIGHT MEALS -->
+        <section class="menu-section container" id="pastries">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">A LITTLE SOMETHING TO EAT</p>
+
+                <h2>Pastries & Light Meals</h2>
+
+                <p>
+                    Pair your favourite drink with a freshly baked
+                    treat or a satisfying light meal.
+                </p>
+
+            </div>
+
+
+            <div class="menu-grid">
+
+                <!-- BLUEBERRY MUFFIN -->
+                <article class="menu-item">
+
+                    <img
+                        src="images/blueberry-muffin.jpg"
+                        alt="Freshly baked blueberry muffin"
+                        class="gallery-image"
+                        loading="lazy">
+
+                    <div class="menu-item-content">
+
+                        <h3>Blueberry Muffin</h3>
+
+                        <p>
+                            A soft, fluffy muffin filled with
+                            sweet blueberries.
+                        </p>
+
+                        <div class="menu-item-bottom">
+
+                            <span class="price">R28.00</span>
+
+                            <button
+                                type="button"
+                                class="btn add-to-cart"
+                                data-name="Blueberry Muffin"
+                                data-price="28">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CROISSANT -->
+                <article class="menu-item">
+
+                    <img
+                        src="images/croissant.jpg"
+                        alt="Golden butter croissant"
+                        class="gallery-image"
+                        loading="lazy">
+
+                    <div class="menu-item-content">
+
+                        <h3>Butter Croissant</h3>
+
+                        <p>
+                            A golden, flaky pastry with
+                            a soft, buttery centre.
+                        </p>
+
+                        <div class="menu-item-bottom">
+
+                            <span class="price">R25.00</span>
+
+                            <button
+                                type="button"
+                                class="btn add-to-cart"
+                                data-name="Butter Croissant"
+                                data-price="25">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CHOCOLATE CAKE -->
+                <article class="menu-item">
+
+                    <img
+                        src="images/chocolate-cake.jpg"
+                        alt="Rich chocolate cake"
+                        class="gallery-image"
+                        loading="lazy">
+
+                    <div class="menu-item-content">
+
+                        <h3>Chocolate Cake</h3>
+
+                        <p>
+                            A rich, moist chocolate cake
+                            for anyone with a sweet tooth.
+                        </p>
+
+                        <div class="menu-item-bottom">
+
+                            <span class="price">R38.00</span>
+
+                            <button
+                                type="button"
+                                class="btn add-to-cart"
+                                data-name="Chocolate Cake"
+                                data-price="38">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PANINI -->
+                <article class="menu-item">
+
+                    <img
+                        src="images/panini.jpg"
+                        alt="Toasted panini sandwich"
+                        class="gallery-image"
+                        loading="lazy">
+
+                    <div class="menu-item-content">
+
+                        <h3>Toasted Panini</h3>
+
+                        <p>
+                            A toasted sandwich with a delicious
+                            filling, perfect for a quick lunch.
+                        </p>
+
+                        <div class="menu-item-bottom">
+
+                            <span class="price">R45.00</span>
+
+                            <button
+                                type="button"
+                                class="btn add-to-cart"
+                                data-name="Toasted Panini"
+                                data-price="45">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- SALAD -->
+                <article class="menu-item">
+
+                    <img
+                        src="images/salad.jpg"
+                        alt="Fresh garden salad"
+                        class="gallery-image"
+                        loading="lazy">
+
+                    <div class="menu-item-content">
+
+                        <h3>Fresh Garden Salad</h3>
+
+                        <p>
+                            A light, refreshing selection
+                            of fresh vegetables.
+                        </p>
+
+                        <div class="menu-item-bottom">
+
+                            <span class="price">R40.00</span>
+
+                            <button
+                                type="button"
+                                class="btn add-to-cart"
+                                data-name="Fresh Garden Salad"
+                                data-price="40">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MAGWINYA -->
+                <article class="menu-item">
+
+                    <img
+                        src="images/magwinya.jpg"
+                        alt="Traditional South African magwinya"
+                        class="gallery-image"
+                        loading="lazy">
+
+                    <div class="menu-item-content">
+
+                        <h3>South African Magwinya</h3>
+
+                        <p>
+                            Traditional golden, fluffy fat cakes
+                            for a comforting local breakfast.
+                        </p>
+
+                        <div class="menu-item-bottom">
+
+                            <span class="price">R20.00</span>
+
+                            <button
+                                type="button"
+                                class="btn add-to-cart"
+                                data-name="South African Magwinya"
+                                data-price="20">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- SPECIAL OFFER -->
+        <section class="menu-promo container">
+
+            <div class="menu-promo-content">
+
+                <p class="eyebrow">A LITTLE THANK YOU</p>
+
+                <h2>Something Extra with Your Order</h2>
+
+                <p>
+                    Spend R50 or more and receive complimentary
+                    tea bags with your purchase.
+                </p>
+
+                <a class="btn" href="contact_us.html">
+                    Visit Our Café
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <a class="logo" href="index.html">
+            Coffee<span>&</span>Beans
+        </a>
+
+        <p>
+            Locally sourced · freshly brewed · proudly welcoming
+        </p>
+
+        <p>
+            &copy; <span id="year">2026</span>
+            Coffee&Beans. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- SHOPPING CART JAVASCRIPT -->
+    <script>
+
+        // Store cart items.
+        // Each product has a name, price and quantity.
+        let cart = {};
+
+        const cartCount = document.getElementById("cart-count");
+        const cartTotal = document.getElementById("cart-total");
+        const cartMessage = document.getElementById("cart-message");
+        const cartDetails = document.getElementById("cart-details");
+        const cartItems = document.getElementById("cart-items");
+
+        // Add a product to the cart.
+        document.querySelectorAll(".add-to-cart").forEach(button => {
+
+            button.addEventListener("click", function () {
+
+                const name = this.dataset.name;
+                const price = Number(this.dataset.price);
+
+                if (cart[name]) {
+                    cart[name].quantity++;
+                } else {
+                    cart[name] = {
+                        price: price,
+                        quantity: 1
+                    };
+                }
+
+                updateCart();
+
+                cartMessage.textContent =
+                    name + " added to your cart.";
+
+            });
+
+        });
+
+
+        // Update the cart count, total and item list.
+        function updateCart() {
+
+            let totalItems = 0;
+            let totalPrice = 0;
+
+            cartItems.innerHTML = "";
+
+            for (const name in cart) {
+
+                const item = cart[name];
+
+                totalItems += item.quantity;
+                totalPrice += item.price * item.quantity;
+
+                const row = document.createElement("div");
+                row.className = "cart-row";
+
+                const productName = document.createElement("span");
+
+                productName.textContent =
+                    name + " × " + item.quantity;
+
+                const productPrice = document.createElement("strong");
+
+                productPrice.textContent =
+                    "R" + (item.price * item.quantity).toFixed(2);
+
+                const removeButton = document.createElement("button");
+
+                removeButton.type = "button";
+                removeButton.className = "cart-remove";
+                removeButton.textContent = "Remove one";
+
+                removeButton.addEventListener("click", function () {
+
+                    cart[name].quantity--;
+
+                    if (cart[name].quantity <= 0) {
+                        delete cart[name];
+                    }
+
+                    updateCart();
+
+                    cartMessage.textContent =
+                        name + " updated in your cart.";
+
+                });
+
+                row.appendChild(productName);
+                row.appendChild(productPrice);
+                row.appendChild(removeButton);
+
+                cartItems.appendChild(row);
+
+            }
+
+            cartCount.textContent = totalItems;
+            cartTotal.textContent = "R" + totalPrice.toFixed(2);
+
+            if (totalItems === 0) {
+
+                cartItems.innerHTML =
+                    "<p>Your cart is empty.</p>";
+
+            }
+
+        }
+
+
+        // Show or hide the cart details.
+        document.getElementById("view-cart-button")
+            .addEventListener("click", function () {
+
+                cartDetails.hidden = !cartDetails.hidden;
+
+                this.textContent = cartDetails.hidden
+                    ? "View Cart"
+                    : "Hide Cart";
+
+                if (!cartDetails.hidden) {
+                    updateCart();
+                    cartDetails.scrollIntoView({
+                        behavior: "smooth",
+                        block: "nearest"
+                    });
+                }
+
+            });
+
+
+        // Clear all products from the cart.
+        document.getElementById("clear-cart-button")
+            .addEventListener("click", function () {
+
+                cart = {};
+
+                updateCart();
+
+                cartDetails.hidden = false;
+
+                document.getElementById("view-cart-button")
+                    .textContent = "View Cart";
+
+                cartMessage.textContent =
+                    "Your cart has been cleared.";
+
+            });
+
+
+        // Set the current year in the footer.
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+        // Display the initial empty cart.
+        updateCart();
+
+    </script>
+<script src="js/script.js" defer></script>
+</body>
+
+</html>
