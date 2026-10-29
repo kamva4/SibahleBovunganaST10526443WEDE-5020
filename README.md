@@ -165,3 +165,133 @@ The Menu page was styled using a responsive grid layout. Products are displayed 
 CSS was used across the website to maintain consistent branding, spacing, colours, typography, buttons, navigation and page layouts.
 
 Part 2 therefore transformed the basic HTML structure developed in Part 1 into a more visually organised, responsive and user-friendly website.
+
+#  Part 3
+
+## 3.1 Project Overview
+
+Coffee&Beans is a fictional South African coffee brand established in 2019. The business has two café locations in Johannesburg: Braamfontein and Melville.
+
+The purpose of this project is to develop a user-friendly website that introduces the business, showcases its menu, provides information about the cafés, and allows customers to make enquiries.
+
+Part 3 focused on improving the website created in the previous parts of the project. The improvements aimed to make the website more functional, interactive, visually appealing, and easier to navigate.
+
+##  Improvements Made to the Website
+
+### 3.2 Website Design and Layout
+
+The website design and layout were reviewed and improved to create a more organised and consistent appearance across the different pages.
+
+The improvements included:
+
+- Improving the arrangement of images, text, buttons, and content sections.
+- Making the layout more consistent across the website.
+- Improving the presentation of menu items.
+- Refining the homepage to make important information easier to find.
+- Improving the overall appearance using CSS.
+
+### 3.3 Menu Page Improvements
+
+The menu page was improved to present food and beverages in a more organised and attractive way. The aim was to make it easier for customers to browse the available products and understand what the café offers.
+
+The menu includes items such as:
+
+- Coffee and other beverages.
+- Rooibos iced tea.
+- South African favourites such as magwinya.
+- Pastries and baked goods.
+- Light meals and snacks.
+
+The images and descriptions help customers explore the menu before visiting the café.
+
+### 3.4 Website Navigation
+
+The website contains five main pages that allow visitors to explore different sections of the business.
+
+- **Home (`index.html`):** Introduces Coffee&Beans and highlights the brand.
+- **Menu (`menu.html`):** Displays the available food and beverages.
+- **About Us (`about_us.html`):** Provides information about the business.
+- **Contact (`contact.html`):** Provides contact information.
+- **Enquiry (`enquiry.html`):** Allows visitors to enter their details and make an enquiry.
+
+The navigation was reviewed to make it easier for visitors to move between the pages.
+
+### 3.5 JavaScript Functionality
+
+JavaScript was used to support interactive features and improve the user experience.
+
+The functionality developed or reviewed included:
+
+- Menu search functionality, where implemented.
+- Interactive responses to user actions.
+- Form validation.
+- Confirmation messages after form submission.
+
+These features help make the website more interactive than a website that only displays static information.
+
+### 3.6 Enquiry Form Improvements
+
+The enquiry page was improved to provide a structured form where visitors can enter information, including:
+
+- First name and surname.
+- Email address.
+- Enquiry category.
+- Preferred café location.
+- Preferred date.
+- Enquiry message.
+
+Form validation helps check that the required information has been entered before a confirmation message is displayed.
+
+**Note:** The enquiry form provides front-end functionality. It does not automatically send enquiries to an email address or store them in a database.
+
+### 3.7 Visual Improvements
+
+The presentation of images, headings, buttons, and content sections was reviewed to make the website more appealing and easier to use.
+
+The goal was to create a design that reflects the identity of Coffee&Beans while keeping the content clear and accessible.
+
+## Changes to My Original Ideas
+
+During Part 3, I reviewed my original ideas and decided to remove or modify some of them to improve the overall functionality of the website.
+
+I realised that adding more content does not necessarily make a website better. Instead, the features need to be useful, relevant, and easy for visitors to understand.
+
+Some of my previous ideas were removed or adjusted to make room for new ideas that better supported the purpose of Coffee&Beans. I focused on improving the menu presentation, making navigation easier, and introducing more practical interactive features.
+
+These changes helped me move away from having a website that only displays information towards creating a more functional website where visitors can explore products, navigate between pages, and interact with the enquiry form.
+
+I also learned that website development requires reviewing previous decisions, identifying weaknesses, and making changes that improve the final product.
+
+## 4. Technologies Used
+
+The following technologies and tools were used in the project:
+
+- **HTML5:** Used to structure the website pages and their content.
+- **CSS3:** Used to style the website and improve its layout and appearance.
+- **JavaScript:** Used to add interactive functionality and form validation.
+- **GitHub:** Used to store and manage the project files.
+- **GitHub Pages:** Used for publishing the website online, if deployment is enabled.
+
+## Project File Structure
+
+The project is organised into separate files and folders to make the website easier to manage.
+
+text
+CoffeeAndBeans/
+|
+|-- index.html
+|-- menu.html
+|-- about_us.html
+|-- contact.html
+|-- enquiry.html
+|
+|-- css/
+|   |-- style.css
+|
+|-- js/
+|   |-- script.js
+|
+|-- images/
+|   |-- Website images
+|
+|-- README.md
